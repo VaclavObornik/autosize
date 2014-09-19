@@ -171,7 +171,7 @@
 					// don't end up with placeholder getting trimmed.
 					mirror.value = ($ta.attr("placeholder") || '') + options.append;
 				} else {
-					mirror.value = ta.value + options.append;
+					mirror.value = ta.value || options.append;
 				}
 
 				mirror.style.overflowY = ta.style.overflowY;
